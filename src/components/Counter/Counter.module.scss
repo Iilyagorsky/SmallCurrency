@@ -1,0 +1,37 @@
+.wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  .button {
+    background-color: transparent;
+    border: 2px solid grey;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    font-size: x-large;
+    height: 65px;
+    text-align: center;
+    width: 65px;
+  }
+
+  .input {
+    background-color: transparent;
+    color: white;
+    font-size: 40px;
+    padding-top: 35px;
+    resize: none;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 390px) {
+    flex-direction: column;
+    width: 200px;
+
+    .input {
+      font-size: 50px;
+      padding: 35px 0 35px 0;
+    }
+  }
+}

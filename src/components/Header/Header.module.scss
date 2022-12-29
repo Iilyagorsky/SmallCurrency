@@ -1,0 +1,46 @@
+.wrapper {
+  background: linear-gradient(150.03deg, #013141 20%, rgba(1, 107, 35, 0.73) 60%, rgba(0, 38, 68, 0.95) 80%, #01303d 100%);
+  -moz-box-shadow: 0 6px 9px 0 gray;
+  -webkit-box-shadow: 0 6px 9px 0 gray;
+  box-shadow: 0 6px 9px 0 gray;
+  width: 100%;
+
+  .header {
+    align-items: center;
+    display: flex;
+    font-size: medium;
+    font-weight: bold;
+    height: 50px;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1280px;
+
+    .navigation {
+      display: flex;
+      flex-direction: row;
+
+      .navigationList {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+
+        .button {
+          align-items: center;
+          color: white;
+          cursor: pointer;
+          display: flex;
+          font-size: 20px;
+          font-weight: bold;
+          height: 50px;
+          justify-content: center;
+          width: 100px;
+        }
+
+        .buttonActive {
+          background: rgba(5, 194, 130, 0.15);
+          color: black;
+        }
+      }
+    }
+  }
+}

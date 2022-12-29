@@ -1,0 +1,23 @@
+.main {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 95vh;
+  width: 100%;
+
+  .wrapper {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fit, max-content) ;
+    justify-content: center;
+    width: 100%;
+  }
+
+
+  @media screen and (min-width: 600px) {
+    .wrapper {
+      grid-template-columns: repeat(auto-fit, 500px);
+      padding-top: 50px;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+@import 'node_modules/react-datepicker/src/stylesheets/datepicker.scss';
+
+.wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+  width: 100%;
+
+  .center {
+    border: 2px solid white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    width: 150px;
+
+    .picker {
+      align-items: center;
+      background-color: transparent;
+      color: white;
+      cursor: pointer;
+      display: flex;
+      font-size: medium;
+      justify-content: center;
+      margin-left: 20px;
+      padding-top: 3px;
+      width: 100px;
+    }
+
+    .icon {
+      color: white;
+      margin-right: 15px;
+      pointer-events: none;
+    }
+  }
+
+  @media screen and (max-width: 390px) {
+    justify-content: center;
+    padding-right: 0;
+    width: 100%;
+  }
+}
